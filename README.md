@@ -3,9 +3,9 @@ Analyze the relationship between latitude and weather for cities around the worl
 
 ## Overview of Analysis
 - In this weather analysis we:
-	- 1) Retrieved desired weather data for cities around the world based on the current temperatures
-	- 2) Created a personalized travel destinations map using customer preferences
-	- 3) Created a travel itinerary map for a trip to four cities that appeared in the destinations based on customer preferences
+	- 1 Retrieved desired weather data for cities around the world based on the current temperatures
+	- 2 Created a personalized travel destinations map using customer preferences
+	- 3 Created a travel itinerary map for a trip to four cities that appeared in the destinations based on customer preferences
 - For (1) above, we used pandas, matplotlib, numpy, and citipy to write code in jupyter notebook to create a list of random cities around the world and we saved the weather data for those cities into a single DataFrame. With this DataFrame, we created a CSV file of all the city weather data which we use to create our travel map and trip map.
 - For (2) above, we used pandas, google maps (gmaps) with our API key to create a list and map of the travel destinations based on the temperatures entered by the customer. This code prompts the user to enter a minimum and maximum desired temperature for vacation. Then, we get a list of cities from our weather data CSV file with the desired temperatures and with this list, we create a map with markers in each of the possible vacation cities.
 - For (3) above, we use pandas, gmaps along with our API key to create one possible travel map for a vacation. We selected four cities from the previous map in step 2 which are all in the same country, so relatively close together. The maps created are maps connecting each of the desired cities to show where the customer can travel if interested in this trip. 
